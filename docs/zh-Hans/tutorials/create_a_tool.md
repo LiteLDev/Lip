@@ -59,9 +59,9 @@ Lip将把在.lip/tools/tool_name/下的、以工具名作为其名称的可执�
 }
 ```
 
-## Test the tool
+## 测试你的工具
 
-In addition to the guide in [Create a Lip Tooth](create_a_lip_tooth.md#test-the-tooth), you should also run the command below to test the tool:
+除了[创建一个tooth](tutorials/create_a_lip_tooth?id=测试你的tooth)中的指南之外，你还应该运行下面的命令来测试这个工具：
 
 ```shell
 lip exec npm [args]

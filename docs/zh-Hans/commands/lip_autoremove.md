@@ -1,25 +1,25 @@
 # lip autoremove
 
-## Usage
+## 用法
 
 ```shell
 lip autoremove [options]
 ```
 
-## Description
+## 功能
 
-Uninstall tooths that are not depended by any other tooths.
+卸载不受任何其他tooth依赖的tooth。
 
-## Options
+## 选项
 
 - `-h, --help`
 
-  Show help.
+  展示帮助信息。
 
 - `-y, --yes`
 
-  Skip the confirmation prompt.
+  跳过所有确认信息
 
 - `--keep-possession`
 
-  Keep files that the tooth author specified the tooth to occupy. These files are often configuration files, data files, etc.
+  保留tooth作者指定的tooth所占用的文件。这些文件通常是配置文件、数据文件等。

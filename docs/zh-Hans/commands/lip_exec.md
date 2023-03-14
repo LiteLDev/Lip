@@ -20,7 +20,7 @@ alias: x
 
 - `--list`
 
-  List all installed tools.
+  列出所有已安装工具。
 
 ## 样例
 

@@ -391,19 +391,19 @@ type是待确认信息的类型。它可以是以下之一。
 }
 ```
 
-## tools
+## `tools` - 工具
 
-Registers tools that can be used with `lip exec`.
+声明一个可以使用 `lip exec` 运行的工具
 
-### Syntax
+### 语法
 
-name is the name of the tool. It must only contains lowercase letters, numbers and dashes [a-z0-9-].
+`name` 是工具的名称。它必须仅由小写字母，数字和破折号组成 [a-z0-9-]。
 
-description is the description of the tool. It will show up when executing `lip exec --list`.
+`description` 是对工具的介绍，它会在  `lip exec --list` 命令的输出中被展示。
 
-entrypoints is a list of entrypoints of the tool. Each entrypoint should contain a path field, which is the path of the executable relative to the root of the tooth. It can also contain GOOS and GOARCH fields, which are the operating system and platform selectors, which should match a possible GOOS and GOARCH variable of Go.
+`entrypoints` 是一个工具的入口点列表。每个入口应该包含一个path字段，这是相对于tooth的可执行文件的路径。它还可以包含GOOS和GOARCH字段，这是操作系统和平台选择器，应该与Go的一个可能的GOOS和GOARCH变量相匹配。
 
-### Examples
+### 样例
 
 ```json
 {
@@ -425,9 +425,9 @@ entrypoints is a list of entrypoints of the tool. Each entrypoint should contain
 }
 ```
 
-### Notes
+### 注意
 
-Do not put more than one entrypoint for the same GOOS and GOARCH. Lip will use the first entrypoint that matches the current platform.
+不要为同一个GOOS和GOARCH设置一个以上的入口点。Lip将使用与当前平台匹配的第一个入口点。
 
 ## 语法
 
